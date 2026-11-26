@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Migrator.Core\Migrator.Core.csproj" />
+    <ProjectReference Include="..\Migrator.Sitecore\Migrator.Sitecore.csproj" />
+    <ProjectReference Include="..\Migrator.Optimizely\Migrator.Optimizely.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon />
+    <RootNamespace>Migrator.App</RootNamespace>
+    <AssemblyName>SitecoreToOptiMigrator</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Config\mappings\**\*" Link="Config\mappings\%(RecursiveDir)%(Filename)%(Extension)"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\Config\sitecore.secrets.json" Link="Config\sitecore.secrets.json"
+          CopyToOutputDirectory="PreserveNewest" Condition="Exists('..\Config\sitecore.secrets.json')" />
+    <None Include="..\Config\sitecore.secrets.sample.json" Link="Config\sitecore.secrets.sample.json"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\Config\optimizely.secrets.json" Link="Config\optimizely.secrets.json"
+          CopyToOutputDirectory="PreserveNewest" Condition="Exists('..\Config\optimizely.secrets.json')" />
+    <None Include="..\Config\optimizely.secrets.sample.json" Link="Config\optimizely.secrets.sample.json"
+          CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

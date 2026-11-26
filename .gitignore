@@ -1,0 +1,25 @@
+## Build
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+
+## Logs / local data
+logs/
+*.log
+*.db
+*.db-shm
+*.db-wal
+
+## Secrets — never commit
+appsettings.*.local.json
+*.secrets.json
+.env
+.env.*
+
+## OS
+Thumbs.db
+Desktop.ini

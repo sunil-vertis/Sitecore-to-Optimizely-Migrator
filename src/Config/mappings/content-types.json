@@ -1,0 +1,2573 @@
+{
+  "version": 1,
+  "defaults": {
+    "locale": "en",
+    "skipUnmappedTemplates": true,
+    "ignoreFields": [
+      "__Created",
+      "__Created by",
+      "__Updated",
+      "__Updated by",
+      "__Revision",
+      "__Sortorder",
+      "__Security",
+      "__Owner",
+      "__Renderings",
+      "__Final Renderings",
+      "__Base template",
+      "__Standard values"
+    ]
+  },
+  "types": [
+    {
+      "sitecoreTemplateId": "{6424A9A6-CDD5-4FFF-AB0C-F614456398DF}",
+      "sitecoreTemplateName": "mvp_SitecoreProduct",
+      "optimizelyContentType": "SitecoreProduct",
+      "createAs": "component",
+      "ignoreFields": [
+        "AlternateImage",
+        "CssCategory",
+        "IsSuperseded",
+        "ItemIcon",
+        "ItemLanguage",
+        "ItemMedialUrl",
+        "ItemUrl",
+        "ItemVersion",
+        "Last Sync",
+        "PriceShortDescription",
+        "PriceStartFromText",
+        "PriceTitleText",
+        "Pricing",
+        "Product Launch Date",
+        "RequestQuoteText",
+        "Source Id",
+        "SyncSourceId"
+      ],
+      "fields": [
+        {
+          "sitecore": "Snapshot",
+          "optimizely": "snapshot",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SellingPoints",
+          "optimizely": "sellingPoints",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "KeyProductFeatures01",
+          "optimizely": "keyProductFeatures01",
+          "kind": "string"
+        },
+        {
+          "sitecore": "KeyProductFeatures02",
+          "optimizely": "keyProductFeatures02",
+          "kind": "string"
+        },
+        {
+          "sitecore": "KeyProductFeatures03",
+          "optimizely": "keyProductFeatures03",
+          "kind": "string"
+        },
+        {
+          "sitecore": "KeyProductFeatures04",
+          "optimizely": "keyProductFeatures04",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ConfigStandardDocumentServer",
+          "optimizely": "configStandardDocumentServer",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ConfigStandardCPU",
+          "optimizely": "configStandardCPU",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ConfigStandardMemoryStandard",
+          "optimizely": "configStandardMemoryStandard",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ConfigStandardMemoryOptional",
+          "optimizely": "configStandardMemoryOptional",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ConfigStandardOpPanel",
+          "optimizely": "configStandardOpPanel",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ReplacesModels",
+          "optimizely": "replacesModels",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ConfigStandardWhatsIncluded",
+          "optimizely": "configStandardWhatsIncluded",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Projector type",
+          "optimizely": "projectorType",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ConfigConfiguration",
+          "optimizely": "configConfiguration",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ConfigFunction",
+          "optimizely": "configFunction",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ColourCapable",
+          "optimizely": "colourCapable",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrinterController",
+          "optimizely": "printerController",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ConfigPrinterControllerOpt",
+          "optimizely": "configPrinterControllerOpt",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Storage",
+          "optimizely": "storage",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PhysicalDimensions",
+          "optimizely": "physicalDimensions",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "WeightMainframe",
+          "optimizely": "weightMainframe",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PhysicalWeight",
+          "optimizely": "physicalWeight",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PhysicalInstallation",
+          "optimizely": "physicalInstallation",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PhysicalSpace",
+          "optimizely": "physicalSpace",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PhysicalDimensions-mainframe",
+          "optimizely": "physicalDimensionsMainframe",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalProjectionSystem",
+          "optimizely": "opticalProjectionSystem",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Resolution",
+          "optimizely": "resolution",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalRefreshRate",
+          "optimizely": "opticalRefreshRate",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalLightSource",
+          "optimizely": "opticalLightSource",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalLightSourceLife",
+          "optimizely": "opticalLightSourceLife",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalLamp",
+          "optimizely": "opticalLamp",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalLampWattage",
+          "optimizely": "opticalLampWattage",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalLampLife",
+          "optimizely": "opticalLampLife",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalLensType",
+          "optimizely": "opticalLensType",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalLensFocalLength",
+          "optimizely": "opticalLensFocalLength",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalLensAperture",
+          "optimizely": "opticalLensAperture",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalZoomType",
+          "optimizely": "opticalZoomType",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalZoomRatio",
+          "optimizely": "opticalZoomRatio",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalUniformity",
+          "optimizely": "opticalUniformity",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalFocusMethod",
+          "optimizely": "opticalFocusMethod",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalMagnification",
+          "optimizely": "opticalMagnification",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalColourReproduction",
+          "optimizely": "opticalColourReproduction",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OptialColourGamut",
+          "optimizely": "optialColourGamut",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalColourTemperature",
+          "optimizely": "opticalColourTemperature",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalProjectionSize",
+          "optimizely": "opticalProjectionSize",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalProjectionDistance",
+          "optimizely": "opticalProjectionDistance",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalProjectionRatio",
+          "optimizely": "opticalProjectionRatio",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalHorizontalScanRate",
+          "optimizely": "opticalHorizontalScanRate",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalVerticalScanRate",
+          "optimizely": "opticalVerticalScanRate",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Tilt angle",
+          "optimizely": "tiltAngle",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalLensShift",
+          "optimizely": "opticalLensShift",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalKeystoneCorrection",
+          "optimizely": "opticalKeystoneCorrection",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalFourCornerAdjustment",
+          "optimizely": "opticalFourCornerAdjustment",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalExhaustVent",
+          "optimizely": "opticalExhaustVent",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalProjectorModes",
+          "optimizely": "opticalProjectorModes",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalInputSignals",
+          "optimizely": "opticalInputSignals",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Optical3DSupport",
+          "optimizely": "optical3DSupport",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalSpeaker",
+          "optimizely": "opticalSpeaker",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Control system",
+          "optimizely": "controlSystem",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalDisplay",
+          "optimizely": "opticalDisplay",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalPixelPitch",
+          "optimizely": "opticalPixelPitch",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalResponseSpeed",
+          "optimizely": "opticalResponseSpeed",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalViewingAngleHV",
+          "optimizely": "opticalViewingAngleHV",
+          "kind": "string"
+        },
+        {
+          "sitecore": "DisplayMethod",
+          "optimizely": "displayMethod",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalAudio",
+          "optimizely": "opticalAudio",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalVideo",
+          "optimizely": "opticalVideo",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Microphone",
+          "optimizely": "microphone",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalCamera",
+          "optimizely": "opticalCamera",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalMultipointMeetingSettings",
+          "optimizely": "opticalMultipointMeetingSettings",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalOtherSupportedFeatures",
+          "optimizely": "opticalOtherSupportedFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PanelSize",
+          "optimizely": "panelSize",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PanelType",
+          "optimizely": "panelType",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalBacklight",
+          "optimizely": "opticalBacklight",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpticalEffectiveDisplayArea",
+          "optimizely": "opticalEffectiveDisplayArea",
+          "kind": "string"
+        },
+        {
+          "sitecore": "AspectRatio",
+          "optimizely": "aspectRatio",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "OpticalAspectRatio",
+          "optimizely": "opticalAspectRatio",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Brightness",
+          "optimizely": "brightness",
+          "kind": "string"
+        },
+        {
+          "sitecore": "AvgMonthlyVolume",
+          "optimizely": "avgMonthlyVolume",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Average monthly statement",
+          "optimizely": "averageMonthlyStatement",
+          "kind": "string"
+        },
+        {
+          "sitecore": "MaxMonthlyVolume",
+          "optimizely": "maxMonthlyVolume",
+          "kind": "string"
+        },
+        {
+          "sitecore": "MaxVolumeStatement",
+          "optimizely": "maxVolumeStatement",
+          "kind": "string"
+        },
+        {
+          "sitecore": "MachineLife",
+          "optimizely": "machineLife",
+          "kind": "string"
+        },
+        {
+          "sitecore": "RelDutyCycle",
+          "optimizely": "relDutyCycle",
+          "kind": "string"
+        },
+        {
+          "sitecore": "RelPMCycle",
+          "optimizely": "relPMCycle",
+          "kind": "string"
+        },
+        {
+          "sitecore": "RelMCBC",
+          "optimizely": "relMCBC",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Mean Copies Between Failures BCBF",
+          "optimizely": "meanCopiesBetweenFailuresBCBF",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Maintenance",
+          "optimizely": "maintenance",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Colour ratio",
+          "optimizely": "colourRatio",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TouchTechnology",
+          "optimizely": "touchTechnology",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TouchPoints",
+          "optimizely": "touchPoints",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TouchResolution",
+          "optimizely": "touchResolution",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TouchPenRequest",
+          "optimizely": "touchPenRequest",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TouchSensorAccuracy",
+          "optimizely": "touchSensorAccuracy",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TouchOutput",
+          "optimizely": "touchOutput",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TouchDetectionSystemElectronicPen",
+          "optimizely": "touchDetectionSystemElectronicPen",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TouchPanelCoverGlass",
+          "optimizely": "touchPanelCoverGlass",
+          "kind": "string"
+        },
+        {
+          "sitecore": "SupplyYields",
+          "optimizely": "supplyYields",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "MediaGeneralStandardInputCapacity",
+          "optimizely": "mediaGeneralStandardInputCapacity",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PaperHandlingOutputConfiguration3rdParty",
+          "optimizely": "paperHandlingOutputConfiguration3rdParty",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "GarmentHandling",
+          "optimizely": "garmentHandling",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Supported Media",
+          "optimizely": "supportedMedia",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "paperThickness",
+          "optimizely": "paperThickness",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Maximum paper size",
+          "optimizely": "maximumPaperSize",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Maximum paper width",
+          "optimizely": "maximumPaperWidth",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PaperWeight",
+          "optimizely": "paperWeight",
+          "kind": "string"
+        },
+        {
+          "sitecore": "MediaLimitlessPaperSupply",
+          "optimizely": "mediaLimitlessPaperSupply",
+          "kind": "string"
+        },
+        {
+          "sitecore": "MediaPaperPath",
+          "optimizely": "mediaPaperPath",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "MediaMasterFeedCapacity",
+          "optimizely": "mediaMasterFeedCapacity",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "MediaMasterEjectBoxCapacity",
+          "optimizely": "mediaMasterEjectBoxCapacity",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "MediaGeneralMaxInputCapacity",
+          "optimizely": "mediaGeneralMaxInputCapacity",
+          "kind": "string"
+        },
+        {
+          "sitecore": "MediaGeneralStandardOutputCapacity",
+          "optimizely": "mediaGeneralStandardOutputCapacity",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "MediaGeneralMaxOutputCapacity",
+          "optimizely": "mediaGeneralMaxOutputCapacity",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PaperHandlingInputConfigurationStandard",
+          "optimizely": "paperHandlingInputConfigurationStandard",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PaperHandlingInputConfigurationOptional",
+          "optimizely": "paperHandlingInputConfigurationOptional",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PaperHandlingOutputConfigurationStandard",
+          "optimizely": "paperHandlingOutputConfigurationStandard",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PaperHandlingOutputConfigurationOptional",
+          "optimizely": "paperHandlingOutputConfigurationOptional",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ConnectInterfacesStandard",
+          "optimizely": "connectInterfacesStandard",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ConnectInterfacesOptional",
+          "optimizely": "connectInterfacesOptional",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Network capable",
+          "optimizely": "networkCapable",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ConnectNetworkProtocolStandard",
+          "optimizely": "connectNetworkProtocolStandard",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ConnectNetworkProtocolOptional",
+          "optimizely": "connectNetworkProtocolOptional",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ConnectMIBSupport",
+          "optimizely": "connectMIBSupport",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopySpeed",
+          "optimizely": "copySpeed",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyMinimumSize",
+          "optimizely": "copyMinimumSize",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyNonScanningArea",
+          "optimizely": "copyNonScanningArea",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopySetPosition",
+          "optimizely": "copySetPosition",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyImageModeSelect",
+          "optimizely": "copyImageModeSelect",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyCustomScaling",
+          "optimizely": "copyCustomScaling",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyImagePosition",
+          "optimizely": "copyImagePosition",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyReproductionRatio",
+          "optimizely": "copyReproductionRatio",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyPaperCutMethod",
+          "optimizely": "copyPaperCutMethod",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyGreyscale",
+          "optimizely": "copyGreyscale",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyFirstCopyTime",
+          "optimizely": "copyFirstCopyTime",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyImageShift",
+          "optimizely": "copyImageShift",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyNumberOfPagesForPresetJobs",
+          "optimizely": "copyNumberOfPagesForPresetJobs",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyEmergencyStop",
+          "optimizely": "copyEmergencyStop",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyEmptyInformation",
+          "optimizely": "copyEmptyInformation",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyFullImageCopy",
+          "optimizely": "copyFullImageCopy",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyQuantitySelection",
+          "optimizely": "copyQuantitySelection",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyCopyReservations",
+          "optimizely": "copyCopyReservations",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyJobPresets",
+          "optimizely": "copyJobPresets",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyJobPrograms",
+          "optimizely": "copyJobPrograms",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyZoomRange",
+          "optimizely": "copyZoomRange",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyEnlargementRatios",
+          "optimizely": "copyEnlargementRatios",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyReductionRatios",
+          "optimizely": "copyReductionRatios",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyImageDensityAdjustment",
+          "optimizely": "copyImageDensityAdjustment",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyOriginalTypeSetting",
+          "optimizely": "copyOriginalTypeSetting",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyColourMode",
+          "optimizely": "copyColourMode",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyModes",
+          "optimizely": "copyModes",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyPaperSelection",
+          "optimizely": "copyPaperSelection",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyAutomaticPaperSelection",
+          "optimizely": "copyAutomaticPaperSelection",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyPaperOutputCurl",
+          "optimizely": "copyPaperOutputCurl",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyDuplexCopy",
+          "optimizely": "copyDuplexCopy",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyMasterProcessTime",
+          "optimizely": "copyMasterProcessTime",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyBookCopy",
+          "optimizely": "copyBookCopy",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopySeriesCopy",
+          "optimizely": "copySeriesCopy",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyCombineCopy",
+          "optimizely": "copyCombineCopy",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyInterruptCopy",
+          "optimizely": "copyInterruptCopy",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyMemoryCopy",
+          "optimizely": "copyMemoryCopy",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyIDCardCopy",
+          "optimizely": "copyIDCardCopy",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyDirectionalSizeMagnification",
+          "optimizely": "copyDirectionalSizeMagnification",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyAutoTrayChange",
+          "optimizely": "copyAutoTrayChange",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyPaperLibrary",
+          "optimizely": "copyPaperLibrary",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyPaperRegistration",
+          "optimizely": "copyPaperRegistration",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyResolution",
+          "optimizely": "copyResolution",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyCopyPreventionPattern",
+          "optimizely": "copyCopyPreventionPattern",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyBatesNumbering",
+          "optimizely": "copyBatesNumbering",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyUserCodes",
+          "optimizely": "copyUserCodes",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyCentring",
+          "optimizely": "copyCentring",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyCornering",
+          "optimizely": "copyCornering",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyCoverSheet",
+          "optimizely": "copyCoverSheet",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopySlipSheet",
+          "optimizely": "copySlipSheet",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyChaptering",
+          "optimizely": "copyChaptering",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyPaperDesignation",
+          "optimizely": "copyPaperDesignation",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyStapling",
+          "optimizely": "copyStapling",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyPunch",
+          "optimizely": "copyPunch",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyElectronicStacking",
+          "optimizely": "copyElectronicStacking",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyOriginalSize",
+          "optimizely": "copyOriginalSize",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyElectronicSorting",
+          "optimizely": "copyElectronicSorting",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyMarginEraseAdjustment",
+          "optimizely": "copyMarginEraseAdjustment",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyColourAdjustment",
+          "optimizely": "copyColourAdjustment",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyImageAdjustment",
+          "optimizely": "copyImageAdjustment",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyOriginalType",
+          "optimizely": "copyOriginalType",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyImageCreation",
+          "optimizely": "copyImageCreation",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyColourCreation",
+          "optimizely": "copyColourCreation",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyOriginalPaperWidth",
+          "optimizely": "copyOriginalPaperWidth",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyStamps",
+          "optimizely": "copyStamps",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyImageRotation",
+          "optimizely": "copyImageRotation",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyStandardInkColours",
+          "optimizely": "copyStandardInkColours",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyRollPaperWidth",
+          "optimizely": "copyRollPaperWidth",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyAutoRotation",
+          "optimizely": "copyAutoRotation",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyLeadingEdgeMargin",
+          "optimizely": "copyLeadingEdgeMargin",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyOriginalFeed",
+          "optimizely": "copyOriginalFeed",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyOriginalTrimmingAtLeadingEdge",
+          "optimizely": "copyOriginalTrimmingAtLeadingEdge",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyMasterCounter",
+          "optimizely": "copyMasterCounter",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyPaperCounter",
+          "optimizely": "copyPaperCounter",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyOriginalStorage",
+          "optimizely": "copyOriginalStorage",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyAutoCycle",
+          "optimizely": "copyAutoCycle",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyOriginalPaperOutput",
+          "optimizely": "copyOriginalPaperOutput",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopySkipFeed",
+          "optimizely": "copySkipFeed",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyClassMemory",
+          "optimizely": "copyClassMemory",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyMultipleExposure",
+          "optimizely": "copyMultipleExposure",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Original stacker",
+          "optimizely": "originalStacker",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyPanelSettings",
+          "optimizely": "copyPanelSettings",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyArea",
+          "optimizely": "copyArea",
+          "kind": "string"
+        },
+        {
+          "sitecore": "CopyInitialSettings",
+          "optimizely": "copyInitialSettings",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopySize",
+          "optimizely": "copySize",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyOtherSupportedFeatures",
+          "optimizely": "copyOtherSupportedFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyPaperWidth",
+          "optimizely": "copyPaperWidth",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyPaperFeed",
+          "optimizely": "copyPaperFeed",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "CopyMaximumSize",
+          "optimizely": "copyMaximumSize",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Print speed colour",
+          "optimizely": "printSpeedColour",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintPrinthead",
+          "optimizely": "printPrinthead",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintTonerDevelopment",
+          "optimizely": "printTonerDevelopment",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintResolution",
+          "optimizely": "printResolution",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintingSurface",
+          "optimizely": "printingSurface",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintMargin",
+          "optimizely": "printMargin",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintDistanceAccuracy",
+          "optimizely": "printDistanceAccuracy",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintScanRegistration",
+          "optimizely": "printScanRegistration",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintStatusLightIndicators",
+          "optimizely": "printStatusLightIndicators",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintPerpendicularity",
+          "optimizely": "printPerpendicularity",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintMediaSkew",
+          "optimizely": "printMediaSkew",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintHeadHeightAdjustment",
+          "optimizely": "printHeadHeightAdjustment",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintCutting",
+          "optimizely": "printCutting",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintPDL",
+          "optimizely": "printPDL",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintDrivers",
+          "optimizely": "printDrivers",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintDriverFeatures",
+          "optimizely": "printDriverFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintDriverResolution",
+          "optimizely": "printDriverResolution",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Supported file formats",
+          "optimizely": "supportedFileFormats",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintDrawingMode",
+          "optimizely": "printDrawingMode",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintDuplexPrinting",
+          "optimizely": "printDuplexPrinting",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintMobilePrinting",
+          "optimizely": "printMobilePrinting",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintHostPrinting",
+          "optimizely": "printHostPrinting",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintEnvelopePrinting",
+          "optimizely": "printEnvelopePrinting",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintPoster",
+          "optimizely": "printPoster",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Print speed black and white",
+          "optimizely": "printSpeedBlackAndWhite",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintFonts",
+          "optimizely": "printFonts",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "HoldPrintLockedPrint",
+          "optimizely": "holdPrintLockedPrint",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintPictBridge",
+          "optimizely": "printPictBridge",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintFromUSBSD",
+          "optimizely": "printFromUSBSD",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintScheduledPrint",
+          "optimizely": "printScheduledPrint",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintBarrierFreeColourManage",
+          "optimizely": "printBarrierFreeColourManage",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintNonPrintArea",
+          "optimizely": "printNonPrintArea",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintMaximumPrintableArea",
+          "optimizely": "printMaximumPrintableArea",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintOptionalController",
+          "optimizely": "printOptionalController",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintTotalFlow",
+          "optimizely": "printTotalFlow",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintOptionalPrinterController",
+          "optimizely": "printOptionalPrinterController",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintImageQuality",
+          "optimizely": "printImageQuality",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintFirstPrintTime",
+          "optimizely": "printFirstPrintTime",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintOtherSupportedFeatures",
+          "optimizely": "printOtherSupportedFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintProductivity",
+          "optimizely": "printProductivity",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintTargetVolume",
+          "optimizely": "printTargetVolume",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintProcess",
+          "optimizely": "printProcess",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintTechnology",
+          "optimizely": "printTechnology",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintFusing",
+          "optimizely": "printFusing",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintInkType",
+          "optimizely": "printInkType",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PrintCuringMethod",
+          "optimizely": "printCuringMethod",
+          "kind": "string"
+        },
+        {
+          "sitecore": "PrintInkConfiguration",
+          "optimizely": "printInkConfiguration",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanSpeed",
+          "optimizely": "scanSpeed",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanCompression",
+          "optimizely": "scanCompression",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanOriginalSize",
+          "optimizely": "scanOriginalSize",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ScanMinimumSize",
+          "optimizely": "scanMinimumSize",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanCustomSize",
+          "optimizely": "scanCustomSize",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanNonScanningArea",
+          "optimizely": "scanNonScanningArea",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanImageEdit",
+          "optimizely": "scanImageEdit",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanGreyscale",
+          "optimizely": "scanGreyscale",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ScanDepth",
+          "optimizely": "scanDepth",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanFileTypes",
+          "optimizely": "scanFileTypes",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanToPC",
+          "optimizely": "scanToPC",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ScanErrorDiffusion",
+          "optimizely": "scanErrorDiffusion",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ScanMethods",
+          "optimizely": "scanMethods",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanContrastControl",
+          "optimizely": "scanContrastControl",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ScanFileNaming",
+          "optimizely": "scanFileNaming",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ScanImageDensityAdj",
+          "optimizely": "scanImageDensityAdj",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ScanUniversalTransmission",
+          "optimizely": "scanUniversalTransmission",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ScanSplitFromBooklet",
+          "optimizely": "scanSplitFromBooklet",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ScanToFileTypes",
+          "optimizely": "scanToFileTypes",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanToFileTypeSupport",
+          "optimizely": "scanToFileTypeSupport",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanToEmail",
+          "optimizely": "scanToEmail",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanToEmailOther",
+          "optimizely": "scanToEmailOther",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanToFolder",
+          "optimizely": "scanToFolder",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanToFolderOther",
+          "optimizely": "scanToFolderOther",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanTWAIN",
+          "optimizely": "scanTWAIN",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "TWAINScanOther",
+          "optimizely": "tWAINScanOther",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanWIA",
+          "optimizely": "scanWIA",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SANEScanning",
+          "optimizely": "sANEScanning",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SANEscanningOther",
+          "optimizely": "sANEscanningOther",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanColourScanning",
+          "optimizely": "scanColourScanning",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ScanFiery",
+          "optimizely": "scanFiery",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanToEmailFiery",
+          "optimizely": "scanToEmailFiery",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanToFolderFiery",
+          "optimizely": "scanToFolderFiery",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanOtherFeatures",
+          "optimizely": "scanOtherFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanOptionalScannerFeatures",
+          "optimizely": "scanOptionalScannerFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanMode",
+          "optimizely": "scanMode",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanProcess",
+          "optimizely": "scanProcess",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanResolution",
+          "optimizely": "scanResolution",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanInterpolatedResolution",
+          "optimizely": "scanInterpolatedResolution",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ScanAutomaticDetect",
+          "optimizely": "scanAutomaticDetect",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScanArea",
+          "optimizely": "scanArea",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ScansRGBSupport",
+          "optimizely": "scansRGBSupport",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxTypes",
+          "optimizely": "faxTypes",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxG3TransmissionSpeed",
+          "optimizely": "faxG3TransmissionSpeed",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxPageMemorySize",
+          "optimizely": "faxPageMemorySize",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxSAFMemoryCapacity",
+          "optimizely": "faxSAFMemoryCapacity",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxMemoryBackup",
+          "optimizely": "faxMemoryBackup",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxFlashROMBackup",
+          "optimizely": "faxFlashROMBackup",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxDeleteTransmission",
+          "optimizely": "faxDeleteTransmission",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxSmoothing",
+          "optimizely": "faxSmoothing",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxDialFeatures",
+          "optimizely": "faxDialFeatures",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxCircuit",
+          "optimizely": "faxCircuit",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxQuickDials",
+          "optimizely": "faxQuickDials",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxGroupDials",
+          "optimizely": "faxGroupDials",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxProgramNumbers",
+          "optimizely": "faxProgramNumbers",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxUserCodes",
+          "optimizely": "faxUserCodes",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxUserFunctionKeys",
+          "optimizely": "faxUserFunctionKeys",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxSerialBroadcasting",
+          "optimizely": "faxSerialBroadcasting",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxForwardToEmail",
+          "optimizely": "faxForwardToEmail",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxForwardToFolder",
+          "optimizely": "faxForwardToFolder",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxPaperlessFax",
+          "optimizely": "faxPaperlessFax",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxRemoteFax",
+          "optimizely": "faxRemoteFax",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxCommunicationLineFeatures",
+          "optimizely": "faxCommunicationLineFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "TransmissionFeatures",
+          "optimizely": "transmissionFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Reception features",
+          "optimizely": "receptionFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxCompatibilty",
+          "optimizely": "faxCompatibilty",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxUniversalTransmission",
+          "optimizely": "faxUniversalTransmission",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxModes",
+          "optimizely": "faxModes",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxDocumentSize",
+          "optimizely": "faxDocumentSize",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxContrastControl",
+          "optimizely": "faxContrastControl",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxOriginalSize",
+          "optimizely": "faxOriginalSize",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxScanningPrintingSize",
+          "optimizely": "faxScanningPrintingSize",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxNonScanningArea",
+          "optimizely": "faxNonScanningArea",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxAutoReduction",
+          "optimizely": "faxAutoReduction",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxReports",
+          "optimizely": "faxReports",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxInternetFax",
+          "optimizely": "faxInternetFax",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxLan_Fax",
+          "optimizely": "faxLanFax",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxCommunicationMode",
+          "optimizely": "faxCommunicationMode",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxIPFax",
+          "optimizely": "faxIPFax",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxOtherFeatures",
+          "optimizely": "faxOtherFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxScanSpeedARDF",
+          "optimizely": "faxScanSpeedARDF",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxScanSpeedSPDF",
+          "optimizely": "faxScanSpeedSPDF",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FaxModemSpeed",
+          "optimizely": "faxModemSpeed",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxCompressionMethods",
+          "optimizely": "faxCompressionMethods",
+          "kind": "string"
+        },
+        {
+          "sitecore": "FaxResolution",
+          "optimizely": "faxResolution",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SecurityKensingtonLock",
+          "optimizely": "securityKensingtonLock",
+          "kind": "string"
+        },
+        {
+          "sitecore": "SecurityPasswordProtect",
+          "optimizely": "securityPasswordProtect",
+          "kind": "string"
+        },
+        {
+          "sitecore": "SecurityUnauthorisedCopyProtection",
+          "optimizely": "securityUnauthorisedCopyProtection",
+          "kind": "string"
+        },
+        {
+          "sitecore": "SecurityDOSSStandard",
+          "optimizely": "securityDOSSStandard",
+          "kind": "string"
+        },
+        {
+          "sitecore": "SecurityDOSSOptional",
+          "optimizely": "securityDOSSOptional",
+          "kind": "string"
+        },
+        {
+          "sitecore": "SecurityEncryption",
+          "optimizely": "securityEncryption",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SecurityAuthentication",
+          "optimizely": "securityAuthentication",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SecurityOtherFeatures",
+          "optimizely": "securityOtherFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SupportedOpEnvWindows",
+          "optimizely": "supportedOpEnvWindows",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SupportedOpEnvPointClick",
+          "optimizely": "supportedOpEnvPointClick",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SupportedOpEnvCitrix",
+          "optimizely": "supportedOpEnvCitrix",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SupportedOpEnvMac",
+          "optimizely": "supportedOpEnvMac",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SupportedOpEnvUnix",
+          "optimizely": "supportedOpEnvUnix",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SupportedOpEnvSAP",
+          "optimizely": "supportedOpEnvSAP",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SupportedOpEnvIBM",
+          "optimizely": "supportedOpEnvIBM",
+          "kind": "string"
+        },
+        {
+          "sitecore": "SupportedOpEnvOther",
+          "optimizely": "supportedOpEnvOther",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Applicationformobiledevices",
+          "optimizely": "applicationformobiledevices",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SupportedSupportedLanguages",
+          "optimizely": "supportedSupportedLanguages",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SoftwareStandard",
+          "optimizely": "softwareStandard",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SoftwareOptional",
+          "optimizely": "softwareOptional",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SoftwareMobileApps",
+          "optimizely": "softwareMobileApps",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Cloud services",
+          "optimizely": "cloudServices",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PowerSource",
+          "optimizely": "powerSource",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroRecoveryTime",
+          "optimizely": "enviroRecoveryTime",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroSoundPowerLevel",
+          "optimizely": "enviroSoundPowerLevel",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroSoundPressureLevel",
+          "optimizely": "enviroSoundPressureLevel",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroEmissionLevels",
+          "optimizely": "enviroEmissionLevels",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroTVOC",
+          "optimizely": "enviroTVOC",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroReductionMaterials",
+          "optimizely": "enviroReductionMaterials",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroEnvironmentalStandards",
+          "optimizely": "enviroEnvironmentalStandards",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroEnergyStandards",
+          "optimizely": "enviroEnergyStandards",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroGreenLabels",
+          "optimizely": "enviroGreenLabels",
+          "kind": "string"
+        },
+        {
+          "sitecore": "EnviroPowerConsumption",
+          "optimizely": "enviroPowerConsumption",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroSafetyStandards",
+          "optimizely": "enviroSafetyStandards",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroEMCStandards",
+          "optimizely": "enviroEMCStandards",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroIDPlasticComponents",
+          "optimizely": "enviroIDPlasticComponents",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroLaserStandards",
+          "optimizely": "enviroLaserStandards",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "PowerConsumptionOptions",
+          "optimizely": "powerConsumptionOptions",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroWiredLANStandards",
+          "optimizely": "enviroWiredLANStandards",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroWirelessLANStandards",
+          "optimizely": "enviroWirelessLANStandards",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "TelecommunicationStandards",
+          "optimizely": "telecommunicationStandards",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroSafetyKit",
+          "optimizely": "enviroSafetyKit",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroOperatingEnvironment",
+          "optimizely": "enviroOperatingEnvironment",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroPowerOnDuration",
+          "optimizely": "enviroPowerOnDuration",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroTEC",
+          "optimizely": "enviroTEC",
+          "kind": "string"
+        },
+        {
+          "sitecore": "EnviroOtherFeatures",
+          "optimizely": "enviroOtherFeatures",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroStartTime",
+          "optimizely": "enviroStartTime",
+          "kind": "string"
+        },
+        {
+          "sitecore": "EnviroAutoOff",
+          "optimizely": "enviroAutoOff",
+          "kind": "string"
+        },
+        {
+          "sitecore": "EnviroWarmupTime",
+          "optimizely": "enviroWarmupTime",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroTimers",
+          "optimizely": "enviroTimers",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "EnviroPowerMode",
+          "optimizely": "enviroPowerMode",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "AccessVisual",
+          "optimizely": "accessVisual",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "AccessSeated",
+          "optimizely": "accessSeated",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "AccessArmMobility",
+          "optimizely": "accessArmMobility",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Auditory",
+          "optimizely": "auditory",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "StandardFeaturesHidden",
+          "optimizely": "standardFeaturesHidden",
+          "kind": "string"
+        },
+        {
+          "sitecore": "BriefingPapers",
+          "optimizely": "briefingPapers",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "SHB",
+          "optimizely": "sHB",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Videos",
+          "optimizely": "videos",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "FilterPPCategory",
+          "optimizely": "filterPPCategory",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "FilterPrintSpeed",
+          "optimizely": "filterPrintSpeed",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "FilterPrintSpeedCutSheet",
+          "optimizely": "filterPrintSpeedCutSheet",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "FilterFunction",
+          "optimizely": "filterFunction",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "FilterProjectionSize",
+          "optimizely": "filterProjectionSize",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "Projection Calculator",
+          "optimizely": "projectionCalculator",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ModelEDPCode",
+          "optimizely": "modelEDPCode",
+          "kind": "string"
+        },
+        {
+          "sitecore": "DeviceEDPCode",
+          "optimizely": "deviceEDPCode",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ModelDisplayName",
+          "optimizely": "modelDisplayName",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ModelDescription",
+          "optimizely": "modelDescription",
+          "kind": "string"
+        },
+        {
+          "sitecore": "MainImage",
+          "optimizely": "mainImage",
+          "kind": "link"
+        },
+        {
+          "sitecore": "ThumbnailImage",
+          "optimizely": "thumbnailImage",
+          "kind": "link"
+        },
+        {
+          "sitecore": "TabFields",
+          "optimizely": "tabFields",
+          "kind": "string"
+        },
+        {
+          "sitecore": "KeySellingPointsField",
+          "optimizely": "keySellingPointsField",
+          "kind": "string"
+        },
+        {
+          "sitecore": "ComparisonFields",
+          "optimizely": "comparisonFields",
+          "kind": "string"
+        },
+        {
+          "sitecore": "KeyAttributes",
+          "optimizely": "keyAttributes",
+          "kind": "string"
+        },
+        {
+          "sitecore": "DetailPageOverride",
+          "optimizely": "detailPageOverride",
+          "kind": "contentReference"
+        },
+        {
+          "sitecore": "SupersededText",
+          "optimizely": "supersededText",
+          "kind": "string"
+        },
+        {
+          "sitecore": "BackToResultsText",
+          "optimizely": "backToResultsText",
+          "kind": "string"
+        },
+        {
+          "sitecore": "RelatedProductsText",
+          "optimizely": "relatedProductsText",
+          "kind": "string"
+        },
+        {
+          "sitecore": "RelatedItemsText",
+          "optimizely": "relatedItemsText",
+          "kind": "string"
+        },
+        {
+          "sitecore": "IsNewProduct",
+          "optimizely": "isNewProduct",
+          "kind": "boolean"
+        },
+        {
+          "sitecore": "Images",
+          "optimizely": "images",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "Config_key_point01",
+          "optimizely": "configKeyPoint01",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Config_key_point02",
+          "optimizely": "configKeyPoint02",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Config_key_point03",
+          "optimizely": "configKeyPoint03",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Config_key_point04",
+          "optimizely": "configKeyPoint04",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Config_key_point05",
+          "optimizely": "configKeyPoint05",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Config_key_point06",
+          "optimizely": "configKeyPoint06",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Width",
+          "optimizely": "width",
+          "kind": "number"
+        },
+        {
+          "sitecore": "Depth",
+          "optimizely": "depth",
+          "kind": "number"
+        },
+        {
+          "sitecore": "Height",
+          "optimizely": "height",
+          "kind": "number"
+        },
+        {
+          "sitecore": "Weight",
+          "optimizely": "weight",
+          "kind": "number"
+        },
+        {
+          "sitecore": "EnableConfigurator",
+          "optimizely": "enableConfigurator",
+          "kind": "boolean"
+        },
+        {
+          "sitecore": "ConfiguratorImage",
+          "optimizely": "configuratorImage",
+          "kind": "link"
+        },
+        {
+          "sitecore": "Supplies",
+          "optimizely": "supplies",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "Accessories",
+          "optimizely": "accessories",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "RelatedProducts",
+          "optimizely": "relatedProducts",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "ContentMetaTags",
+          "optimizely": "contentMetaTags",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "RelatedItems",
+          "optimizely": "relatedItems",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "ContentItems",
+          "optimizely": "contentItems",
+          "kind": "contentReferenceList"
+        },
+        {
+          "sitecore": "ServiceDescription",
+          "optimizely": "serviceDescription",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "ServicePreamble",
+          "optimizely": "servicePreamble",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Warranty",
+          "optimizely": "warranty",
+          "kind": "string"
+        }
+      ]
+    },
+    {
+      "sitecoreTemplateId": "{D0B14F15-D8E7-464C-9DF7-C5CF2717C30C}",
+      "sitecoreTemplateName": "Home",
+      "optimizelyContentType": "Page",
+      "createAs": "page",
+      "ignoreFields": [
+        "ItemIcon",
+        "ItemLanguage",
+        "ItemMedialUrl",
+        "ItemUrl",
+        "ItemVersion",
+        "Attributes",
+        "NavigationFilter",
+        "MainContent"
+      ],
+      "fields": [
+        {
+          "sitecore": "Title",
+          "optimizely": "title",
+          "kind": "string"
+        },
+        {
+          "sitecore": "BrowserTitle",
+          "optimizely": "browserTitle",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Breadcrumb Title",
+          "optimizely": "breadcrumbTitle",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Content",
+          "optimizely": "content",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Subtitle",
+          "optimizely": "subtitle",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Description",
+          "optimizely": "description",
+          "kind": "richText"
+        },
+        {
+          "sitecore": "Alt Title",
+          "optimizely": "altTitle",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Category",
+          "optimizely": "category",
+          "kind": "contentReference"
+        },
+        {
+          "sitecore": "Thumbnail",
+          "optimizely": "thumbnail",
+          "kind": "link"
+        },
+        {
+          "sitecore": "Product Label",
+          "optimizely": "productLabel",
+          "kind": "contentReference"
+        },
+        {
+          "sitecore": "Page Views",
+          "optimizely": "pageViews",
+          "kind": "number"
+        },
+        {
+          "sitecore": "Page Publish Date",
+          "optimizely": "pagePublishDate",
+          "kind": "dateTime"
+        },
+        {
+          "sitecore": "Tags",
+          "optimizely": "tags",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Author",
+          "optimizely": "author",
+          "kind": "contentReference"
+        },
+        {
+          "sitecore": "Link Text",
+          "optimizely": "linkText",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Page Design",
+          "optimizely": "pageDesign",
+          "kind": "contentReference"
+        },
+        {
+          "sitecore": "NavigationClass",
+          "optimizely": "navigationClass",
+          "kind": "contentReference"
+        },
+        {
+          "sitecore": "NavigationTitle",
+          "optimizely": "navigationTitle",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpenGraphTitle",
+          "optimizely": "openGraphTitle",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpenGraphDescription",
+          "optimizely": "openGraphDescription",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpenGraphImageUrl",
+          "optimizely": "openGraphImageUrl",
+          "kind": "contentReference"
+        },
+        {
+          "sitecore": "OpenGraphType",
+          "optimizely": "openGraphType",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpenGraphSiteName",
+          "optimizely": "openGraphSiteName",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpenGraphAdmins",
+          "optimizely": "openGraphAdmins",
+          "kind": "string"
+        },
+        {
+          "sitecore": "OpenGraphAppId",
+          "optimizely": "openGraphAppId",
+          "kind": "string"
+        },
+        {
+          "sitecore": "MetaDescription",
+          "optimizely": "metaDescription",
+          "kind": "string"
+        },
+        {
+          "sitecore": "RA url",
+          "optimizely": "rAUrl",
+          "kind": "link"
+        },
+        {
+          "sitecore": "RTW url",
+          "optimizely": "rTWUrl",
+          "kind": "link"
+        },
+        {
+          "sitecore": "RVN url",
+          "optimizely": "rVNUrl",
+          "kind": "link"
+        },
+        {
+          "sitecore": "RAP url",
+          "optimizely": "rAPUrl",
+          "kind": "link"
+        },
+        {
+          "sitecore": "RHK url",
+          "optimizely": "rHKUrl",
+          "kind": "link"
+        },
+        {
+          "sitecore": "RKR url",
+          "optimizely": "rKRUrl",
+          "kind": "link"
+        },
+        {
+          "sitecore": "RMS url",
+          "optimizely": "rMSUrl",
+          "kind": "link"
+        },
+        {
+          "sitecore": "RNZ url",
+          "optimizely": "rNZUrl",
+          "kind": "link"
+        },
+        {
+          "sitecore": "RPH url",
+          "optimizely": "rPHUrl",
+          "kind": "link"
+        },
+        {
+          "sitecore": "RSP url",
+          "optimizely": "rSPUrl",
+          "kind": "link"
+        },
+        {
+          "sitecore": "RTH url",
+          "optimizely": "rTHUrl",
+          "kind": "link"
+        },
+        {
+          "sitecore": "Head",
+          "optimizely": "head",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Body Last",
+          "optimizely": "bodyLast",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Exclude From Search",
+          "optimizely": "excludeFromSearch",
+          "kind": "boolean"
+        },
+        {
+          "sitecore": "Scope",
+          "optimizely": "scope",
+          "kind": "contentReference"
+        },
+        {
+          "sitecore": "ChangeFrequency",
+          "optimizely": "changeFrequency",
+          "kind": "contentReference"
+        },
+        {
+          "sitecore": "Priority",
+          "optimizely": "priority",
+          "kind": "contentReference"
+        },
+        {
+          "sitecore": "HideFromSitemapXml",
+          "optimizely": "hideFromSitemapXml",
+          "kind": "boolean"
+        },
+        {
+          "sitecore": "StickyNotes",
+          "optimizely": "stickyNotes",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Body Css Class",
+          "optimizely": "bodyCssClass",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Body Id",
+          "optimizely": "bodyId",
+          "kind": "string"
+        },
+        {
+          "sitecore": "Custom CSS",
+          "optimizely": "CustomCSS",
+          "kind": "string"
+        },
+        {
+          "sitecore": "SxaTags",
+          "optimizely": "sxaTags",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TwitterTitle",
+          "optimizely": "twitterTitle",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TwitterSite",
+          "optimizely": "twitterSite",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TwitterDescription",
+          "optimizely": "twitterDescription",
+          "kind": "string"
+        },
+        {
+          "sitecore": "TwitterImage",
+          "optimizely": "twitterImage",
+          "kind": "contentReference"
+        },
+        {
+          "sitecore": "TwitterCardType",
+          "optimizely": "twitterCardType",
+          "kind": "contentReference"
+        }
+      ]
+    }
+  ]
+}

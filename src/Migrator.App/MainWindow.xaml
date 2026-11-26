@@ -1,0 +1,238 @@
+﻿<Window x:Class="Migrator.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sitecore → Optimizely CMS SaaS Migrator"
+        Height="780" Width="1100"
+        MinHeight="640" MinWidth="900"
+        Background="#F5F5F5">
+  <DockPanel Margin="12">
+    <StackPanel DockPanel.Dock="Top" Margin="0,0,0,10">
+      <TextBlock Text="Sitecore to Optimizely CMS SaaS Migrator"
+                 FontSize="20" FontWeight="SemiBold" />
+      <TextBlock Text="1:1 content-type and field mapping · path-based migration · dry-run by default"
+                 Foreground="#555" Margin="0,4,0,0" />
+    </StackPanel>
+
+    <StatusBar DockPanel.Dock="Bottom" Margin="0,8,0,0">
+      <StatusBarItem>
+        <TextBlock x:Name="StatusText" Text="Ready" />
+      </StatusBarItem>
+      <StatusBarItem HorizontalAlignment="Right">
+        <ProgressBar x:Name="ProgressBar" Width="220" Height="14" Minimum="0" Maximum="100" Value="0" />
+      </StatusBarItem>
+    </StatusBar>
+
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="2*" />
+        <ColumnDefinition Width="8" />
+        <ColumnDefinition Width="3*" />
+      </Grid.ColumnDefinitions>
+
+      <!-- Left: settings -->
+      <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+          <GroupBox Header="Sitecore connection" Padding="8" Margin="0,0,0,8">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+
+              <TextBlock Grid.Row="0" Grid.Column="0" Text="Base URL" VerticalAlignment="Center" />
+              <TextBox Grid.Row="0" Grid.Column="1" x:Name="SitecoreBaseUrl" Margin="0,2"
+                       ToolTip="CM host only, e.g. https://cm.mysite.com (no /sitecore suffix)"
+                       Text="https://ricoh-production-523860-cm.azurewebsites.net" />
+
+              <TextBlock Grid.Row="1" Grid.Column="0" Text="API key" VerticalAlignment="Center" />
+              <TextBox Grid.Row="1" Grid.Column="1" x:Name="SitecoreApiKey" Margin="0,2"
+                       ToolTip="API Key item ID from /sitecore/system/Settings/Services/API Keys"
+                       Text="{}{D7EA8D3E-EB79-4A4C-802B-1A2FF7AAD0D5}" />
+
+              <TextBlock Grid.Row="2" Grid.Column="0" Text="API transport" VerticalAlignment="Center" />
+              <ComboBox Grid.Row="2" Grid.Column="1" x:Name="SitecoreTransportCombo" Margin="0,2"
+                        SelectedIndex="0">
+                <ComboBoxItem Content="Item Service (SSC)" Tag="ItemService" IsSelected="True" />
+                <ComboBoxItem Content="Layout Service (JSS)" Tag="LayoutService" />
+              </ComboBox>
+
+              <TextBlock Grid.Row="3" Grid.Column="0" Text="Auth mode" VerticalAlignment="Center" />
+              <ComboBox Grid.Row="3" Grid.Column="1" x:Name="SitecoreAuthModeCombo" Margin="0,2"
+                        SelectedIndex="1">
+                <ComboBoxItem Content="API key (sc_apikey)" Tag="ApiKey" />
+                <ComboBoxItem Content="Username/password (SSC login)" Tag="Basic" IsSelected="True" />
+                <ComboBoxItem Content="API key + username/password" Tag="ApiKeyAndBasic" />
+              </ComboBox>
+
+              <TextBlock Grid.Row="4" Grid.Column="0" Text="Credentials" VerticalAlignment="Center" />
+              <TextBlock Grid.Row="4" Grid.Column="1" x:Name="SitecoreCredentialsSource" Margin="0,4,0,2"
+                         TextWrapping="Wrap" Foreground="#555" FontSize="11"
+                         Text="Username and password are read from Config/sitecore.secrets.json." />
+
+              <TextBlock Grid.Row="5" Grid.Column="0" Text="Database" VerticalAlignment="Center" />
+              <TextBox Grid.Row="5" Grid.Column="1" x:Name="SitecoreDatabase" Margin="0,2" Text="master" />
+
+              <TextBlock Grid.Row="6" Grid.Column="0" Text="Language" VerticalAlignment="Center" />
+              <TextBox Grid.Row="6" Grid.Column="1" x:Name="SitecoreLanguage" Margin="0,2" Text="en" />
+
+              <CheckBox Grid.Row="7" Grid.Column="1" x:Name="SitecoreIgnoreSsl"
+                        Content="Ignore SSL errors (local/self-signed CM)" Margin="0,6,0,0" IsChecked="True" />
+
+              <Button Grid.Row="8" Grid.Column="1" Content="Test Sitecore"
+                      HorizontalAlignment="Left" Margin="0,6,0,0" Padding="12,4"
+                      Click="TestSitecore_Click" />
+
+              <TextBlock Grid.Row="9" Grid.Column="1" TextWrapping="Wrap" Foreground="#666" FontSize="11" Margin="0,6,0,0"
+                         Text="Username/password uses SSC /auth/login + cookie. If production blocks that endpoint, CM config is still required." />
+            </Grid>
+          </GroupBox>
+
+          <GroupBox Header="Optimizely CMS SaaS" Padding="8" Margin="0,0,0,8">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+
+              <TextBlock Grid.Row="0" Grid.Column="0" Text="API base" VerticalAlignment="Center" />
+              <TextBox Grid.Row="0" Grid.Column="1" x:Name="OptiApiBase"
+                       Text="https://api.cms.optimizely.com/v1" Margin="0,2" />
+
+              <TextBlock Grid.Row="1" Grid.Column="0" Text="Credentials" VerticalAlignment="Center" />
+              <TextBlock Grid.Row="1" Grid.Column="1" x:Name="OptiCredentialsSource" Margin="0,4,0,2"
+                         TextWrapping="Wrap" Foreground="#555" FontSize="11"
+                         Text="Client ID and secret are read from Config/optimizely.secrets.json." />
+
+              <TextBlock Grid.Row="2" Grid.Column="0" Text="Locale" VerticalAlignment="Center" />
+              <TextBox Grid.Row="2" Grid.Column="1" x:Name="OptiLocale" Text="en" Margin="0,2" />
+
+              <TextBlock Grid.Row="3" Grid.Column="0" Text="Scope" VerticalAlignment="Center" />
+              <TextBox Grid.Row="3" Grid.Column="1" x:Name="OptiScope" Text="api:admin" Margin="0,2" />
+
+              <Button Grid.Row="4" Grid.Column="1" Content="Test Optimizely"
+                      HorizontalAlignment="Left" Margin="0,6,0,0" Padding="12,4"
+                      Click="TestOptimizely_Click" />
+            </Grid>
+          </GroupBox>
+
+          <GroupBox Header="Paths" Padding="8" Margin="0,0,0,8">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+
+              <TextBlock Grid.Row="0" Grid.Column="0" Text="Sitecore path" VerticalAlignment="Center" />
+              <TextBox Grid.Row="0" Grid.Column="1" x:Name="SitecoreSourcePath"
+                       ToolTip="Item Service: full Sitecore path. Example product folder or a single product item."
+                       Text="/sitecore/content/Ricoh/RA/Data/Commerce Items/Office Printing/MFP Colour/418573" Margin="0,2" />
+
+              <CheckBox Grid.Row="1" Grid.Column="1" x:Name="SingleItemOnlyCheck"
+                        Content="Single item only (do not migrate children)"
+                        ToolTip="When checked, only the Sitecore path item is migrated; descendants are skipped."
+                        Margin="0,4,0,2" />
+
+              <TextBlock Grid.Row="2" Grid.Column="0" Text="Opti container key" VerticalAlignment="Center" />
+              <TextBox Grid.Row="2" Grid.Column="1" x:Name="OptiContainerKey" Margin="0,2" />
+
+              <TextBlock Grid.Row="3" Grid.Column="0" Text="Target label" VerticalAlignment="Center" />
+              <TextBox Grid.Row="3" Grid.Column="1" x:Name="OptiTargetLabel"
+                       Text="(optional label for ID map)" Margin="0,2" />
+            </Grid>
+          </GroupBox>
+
+          <GroupBox Header="Mapping (1:1 types &amp; fields)" Padding="8" Margin="0,0,0,8">
+            <StackPanel>
+              <DockPanel>
+                <Button DockPanel.Dock="Right" Content="Browse…" Padding="10,4"
+                        Click="BrowseMapping_Click" Margin="6,0,0,0" />
+                <TextBox x:Name="MappingPath" />
+              </DockPanel>
+              <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                <Button Content="Validate mapping" Padding="12,4" Click="ValidateMapping_Click" />
+                <Button Content="Open sample" Padding="12,4" Margin="8,0,0,0" Click="OpenSample_Click" />
+              </StackPanel>
+              <TextBox x:Name="MappingValidationOutput"
+                       Margin="0,8,0,0" Height="90"
+                       IsReadOnly="True" TextWrapping="Wrap"
+                       VerticalScrollBarVisibility="Auto"
+                       FontFamily="Consolas" FontSize="11" />
+            </StackPanel>
+          </GroupBox>
+
+          <GroupBox Header="Run" Padding="8">
+            <StackPanel>
+              <CheckBox x:Name="DryRunCheck" Content="Dry run (no writes to Optimizely)" IsChecked="True" />
+              <CheckBox x:Name="ContinueOnErrorCheck" Content="Continue on error" IsChecked="True" Margin="0,4,0,0" />
+              <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Button x:Name="MigrateButton" Content="Start migration" Padding="16,6"
+                        FontWeight="SemiBold" Click="Migrate_Click" />
+                <Button x:Name="CancelButton" Content="Cancel" Padding="16,6" Margin="8,0,0,0"
+                        IsEnabled="False" Click="Cancel_Click" />
+                <Button Content="Export report" Padding="12,6" Margin="8,0,0,0" Click="ExportReport_Click" />
+              </StackPanel>
+            </StackPanel>
+          </GroupBox>
+        </StackPanel>
+      </ScrollViewer>
+
+      <GridSplitter Grid.Column="1" Width="8" HorizontalAlignment="Stretch" />
+
+      <!-- Right: log + results -->
+      <Grid Grid.Column="2">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="8" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0" Header="Log" Padding="6">
+          <ListBox x:Name="LogList" FontFamily="Consolas" FontSize="11" />
+        </GroupBox>
+
+        <GridSplitter Grid.Row="1" Height="8" HorizontalAlignment="Stretch" />
+
+        <GroupBox Grid.Row="2" Header="Item results" Padding="6">
+          <DataGrid x:Name="ResultsGrid"
+                    AutoGenerateColumns="False"
+                    IsReadOnly="True"
+                    CanUserAddRows="False"
+                    HeadersVisibility="Column">
+            <DataGrid.Columns>
+              <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="80" />
+              <DataGridTextColumn Header="Template" Binding="{Binding TemplateName}" Width="120" />
+              <DataGridTextColumn Header="Opti type" Binding="{Binding OptimizelyContentType}" Width="120" />
+              <DataGridTextColumn Header="Path" Binding="{Binding SitecorePath}" Width="*" />
+              <DataGridTextColumn Header="Message" Binding="{Binding Message}" Width="2*" />
+            </DataGrid.Columns>
+          </DataGrid>
+        </GroupBox>
+      </Grid>
+    </Grid>
+  </DockPanel>
+</Window>
