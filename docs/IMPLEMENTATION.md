@@ -2,6 +2,9 @@
 
 Detailed implementation documentation for **Migrator.App** (`SitecoreToOptiMigrator.exe`) and the libraries it orchestrates. Use this when extending mapping, debugging a failed run, or onboarding engineers to the tool.
 
+**Solution location:** `C:\Projects\Sitecore_to_Optimizely_Saas\src`  
+(Repo root also has `docs/` for this guide and `.gitignore`.)
+
 ---
 
 ## 1. Purpose
@@ -535,7 +538,7 @@ Generate `content-types.json` from Sitecore template export + Opti content-type 
 ## 17. Build and run
 
 ```powershell
-cd C:\Projects\Sitecore_to_Optimizely_Saas
+cd C:\Projects\Sitecore_to_Optimizely_Saas\src
 dotnet build
 dotnet run --project Migrator.App
 ```
